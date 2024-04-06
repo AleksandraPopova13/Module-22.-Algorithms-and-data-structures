@@ -1,8 +1,8 @@
 try:
-    array = list(map(float, input("Введите последовательность чисел в любом порядке, через пробел: ").split()))
+    array = list(map(float, input("Введите последовательность чисел через пробел: ").split()))
     element = float(input("Введите любое число из заданного диапазона: "))
 except ValueError:
-    print('Ошибка!!! Пожалуйста, вводите только числа!') #вывод ошибки при вводе некорректных значений
+    print('Ввести можно только число:( Пожалуйста введите число.') 
 else:
     def bubble_sorting(array):
         for i in range(len(array)):
